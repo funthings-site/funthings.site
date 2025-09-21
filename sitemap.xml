@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap optimized for GitHub Pages and search engine indexing. All URLs are absolute and mobile-friendly. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://funthings.site/</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://funthings.site/assets/Logo.jpg</image:loc>
+      <image:title>FunThings.site - Random Generators Online</image:title>
+      <image:caption>Free random generators for emojis, countries, and numbers</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Blog Index -->
+  <url>
+    <loc>https://funthings.site/blog/</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile/>
+  </url>
+  
+  <!-- Tool Pages -->
+  <url>
+    <loc>https://funthings.site/emoji-generator.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://funthings.site/assets/Logo.jpg</image:loc>
+      <image:title>Free Random Emoji Generator - 200+ Emojis Online</image:title>
+      <image:caption>Generate 1-100 random emojis instantly from 200+ options</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://funthings.site/random-country.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://funthings.site/assets/Logo.jpg</image:loc>
+      <image:title>Free Random Country Generator - 196 Countries with Flags</image:title>
+      <image:caption>Discover random countries with real flags, capitals, and facts</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://funthings.site/random-number.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://funthings.site/assets/Logo.jpg</image:loc>
+      <image:title>Free Random Number Generator - Custom Range & Stats</image:title>
+      <image:caption>Generate random numbers within any custom range with statistics</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://funthings.site/blog/best-random-generators.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://funthings.site/assets/Logo.jpg</image:loc>
+      <image:title>Best Random Generators Online for Fun - Complete Guide 2025</image:title>
+      <image:caption>Discover the most entertaining and useful random generators available online</image:caption>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>FunThings.site</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-20T10:00:00+00:00</news:publication_date>
+      <news:title>Best Random Generators Online for Fun - Complete Guide 2025</news:title>
+      <news:keywords>random generators, online tools, entertainment, decision making, fun tools</news:keywords>
+    </news:news>
+  </url>
+  
+  <url>
+    <loc>https://funthings.site/blog/creativity-productivity-random-generators.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://funthings.site/assets/Logo.jpg</image:loc>
+      <image:title>How Random Generators Boost Creativity & Productivity - Complete Guide 2025</image:title>
+      <image:caption>Learn how random generators can spark creativity and boost productivity</image:caption>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>FunThings.site</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-20T10:00:00+00:00</news:publication_date>
+      <news:title>How Random Generators Boost Creativity & Productivity - Complete Guide 2025</news:title>
+      <news:keywords>creativity, productivity, random generators, decision making, creative tools</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Static Pages -->
+  <url>
+    <loc>https://funthings.site/about.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+  
+  <url>
+    <loc>https://funthings.site/contact.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+  </url>
+  
+  <url>
+    <loc>https://funthings.site/privacy.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <mobile:mobile/>
+  </url>
+  
+  <url>
+    <loc>https://funthings.site/terms.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <mobile:mobile/>
+  </url>
+  
+  <url>
+    <loc>https://funthings.site/disclaimer.html</loc>
+    <lastmod>2025-09-21T10:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <mobile:mobile/>
+  </url>
+  
+</urlset>

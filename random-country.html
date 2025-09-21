@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Random Country Generator - 196 Countries with Flags | FunThings.site</title>
+    <meta name="description" content="Discover random countries with real flags, capitals, and facts! 196 countries worldwide. Perfect for geography learning, travel inspiration, and trivia games.">
+    <meta name="keywords" content="random country generator, country picker, random country, geography tool, travel inspiration, country facts, world countries, country flags">
+    <meta name="author" content="Naveed">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Random Country Generator - FunThings.site">
+    <meta property="og:description" content="Generate random countries from around the world! Perfect for learning geography, travel planning, or trivia games.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://funthings.site/random-country.html">
+    <meta property="og:image" content="https://funthings.site/assets/Logo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/Logo.jpg">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Random Country Generator - FunThings.site",
+        "url": "https://funthings.site/random-country.html",
+        "description": "Generate random countries from around the world! Perfect for learning geography, travel planning, or trivia games.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "FunThings.site",
+            "url": "https://funthings.site"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Naveed"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/Logo.jpg" alt="FunThings.site - Free Random Country Generator Logo">
+                FunThings.site
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html#tools">Tools</a>
+                <a href="blog/index.html">Blog</a>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle">🌙 Dark</button>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <h1>🌍 Random Country Generator</h1>
+                <p>Discover random countries from around the world! Great for learning geography, travel planning, or trivia games.</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <div style="text-align: center;">
+                    <button class="generate-button" id="generate-country">Generate Random Country</button>
+                    <div id="country-result">
+                        <div class="country-card" style="display: none;">
+                            <div class="country-flag" id="country-flag"></div>
+                            <div class="country-name" id="country-name"></div>
+                            <div class="country-fact" id="country-fact"></div>
+                            <div class="country-details" id="country-details"></div>
+                        </div>
+                        <div id="country-placeholder" style="padding: 40px; color: var(--text-light); font-size: 1.1rem;">
+                            Click the button above to discover a random country with interesting facts!
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <button onclick="copyCountryInfo()" 
+                                style="background: var(--secondary-color); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: 500; margin-right: 10px;">
+                            📋 Copy Country Info
+                        </button>
+                        <button onclick="clearCountry()" 
+                                style="background: var(--warning-color); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: 500;">
+                            🗑️ Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Use Section -->
+            <div style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; margin: 30px 0;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px; text-align: center;">How to Use the Country Generator</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">1️⃣</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Click Generate</h3>
+                        <p style="color: var(--text-light);">Press the "Generate Random Country" button to get a random country from our database.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">2️⃣</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Learn & Explore</h3>
+                        <p style="color: var(--text-light);">Use the generated country for learning, travel planning, or trivia games!</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">3️⃣</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Copy & Share</h3>
+                        <p style="color: var(--text-light);">Copy the country name to share with friends or use in your projects!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fun Facts Section -->
+            <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 15px; padding: 30px; margin: 30px 0;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px; text-align: center;">Amazing Country Facts</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🌍 Total Countries</h3>
+                        <p style="color: var(--text-light);">There are 195 countries in the world today, including 193 UN member states and 2 observer states (Vatican City and Palestine).</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🏔️ Largest Country</h3>
+                        <p style="color: var(--text-light);">Russia is the largest country by land area, covering about 17.1 million square kilometers (6.6 million square miles).</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🏝️ Smallest Country</h3>
+                        <p style="color: var(--text-light);">Vatican City is the smallest country in the world, covering only 0.17 square miles (0.44 square kilometers).</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🗣️ Most Languages</h3>
+                        <p style="color: var(--text-light);">Papua New Guinea has the most languages of any country, with over 800 different languages spoken!</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🌊 Most Coastline</h3>
+                        <p style="color: var(--text-light);">Canada has the longest coastline in the world, stretching over 202,080 kilometers (125,567 miles).</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🏜️ Driest Place</h3>
+                        <p style="color: var(--text-light);">The Atacama Desert in Chile is considered the driest place on Earth, with some areas receiving no rainfall for years.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uses Section -->
+            <div style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; margin: 30px 0;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px; text-align: center;">Perfect For</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🎓</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Education</h3>
+                        <p style="color: var(--text-light);">Learn geography and world countries in a fun way</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">✈️</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Travel Planning</h3>
+                        <p style="color: var(--text-light);">Discover new destinations for your next adventure</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🎮</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Games & Trivia</h3>
+                        <p style="color: var(--text-light);">Perfect for geography quizzes and trivia games</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🎲</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Random Selection</h3>
+                        <p style="color: var(--text-light);">Make random decisions or selections</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FunThings.site</h3>
+                <p style="color: var(--text-light); margin-bottom: 20px;">
+                    Your go-to destination for fun generators and random tools that brighten your day!
+                </p>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    Making the internet more fun, one tool at a time
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#tools">All Tools</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FunThings.site. All rights reserved. | Created by Naveed</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
+</body>
+</html>

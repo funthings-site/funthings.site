@@ -1,0 +1,57 @@
+# GitHub Pages deployment configuration
+# This file ensures proper deployment to GitHub Pages
+
+# Include all necessary files
+include:
+  - _includes
+  - _layouts
+  - _sass
+  - assets
+  - blog
+  - .nojekyll
+
+# Keep important files
+keep_files:
+  - .git
+  - .gitignore
+
+# Performance optimizations
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: [development, local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+# SEO and performance
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site settings
+url: "https://funthings.site"
+baseurl: ""
+title: "FunThings.site - Free Random Generators Online"
+description: "Free random generators for emojis, countries, and numbers. Perfect for entertainment, creativity, and decision-making."
+author: "Naveed"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: UTC
+
+# Exclude development files
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache

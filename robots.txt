@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://funthings.site/sitemap.xml
+
+# Allow all search engines to crawl all content
+# Optimized for GitHub Pages deployment
+
+# Crawl-delay to prevent server overload
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# GitHub Pages optimized rules
+# Allow access to all static files
+Allow: /style.css
+Allow: /script.js
+Allow: /assets/
+Allow: /blog/
+
+# Block unnecessary files for crawling
+Disallow: /sw.js
+Disallow: /.git
+Disallow: /.github
+Disallow: /node_modules
+Disallow: /*.log
+Disallow: /*.tmp

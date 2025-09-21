@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FunThings.site - Random Generators & Fun Tools Blog</title>
+    <description>Discover the latest insights on random generators, creative tools, and productivity tips. Learn how to use random generators for entertainment, decision-making, and boosting creativity.</description>
+    <link>https://funthings.site</link>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Sep 2025 10:00:00 GMT</lastBuildDate>
+    <atom:link href="https://funthings.site/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://funthings.site/assets/Logo.jpg</url>
+      <title>FunThings.site</title>
+      <link>https://funthings.site</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>Best Random Generators Online for Fun - Complete Guide 2025</title>
+      <description>Discover the most entertaining and useful random generators available online. From emoji generators to random country selectors, find the perfect tool for any occasion.</description>
+      <link>https://funthings.site/blog/best-random-generators.html</link>
+      <guid isPermaLink="true">https://funthings.site/blog/best-random-generators.html</guid>
+      <pubDate>Fri, 20 Sep 2025 10:00:00 GMT</pubDate>
+      <category>Tools</category>
+      <author>naveed@funthings.site (Naveed)</author>
+    </item>
+    
+    <item>
+      <title>How Random Generators Boost Creativity & Productivity - Complete Guide 2025</title>
+      <description>Learn how random generators can spark creativity, break decision paralysis, and boost productivity. Practical tips and real-world applications for creative professionals.</description>
+      <link>https://funthings.site/blog/creativity-productivity-random-generators.html</link>
+      <guid isPermaLink="true">https://funthings.site/blog/creativity-productivity-random-generators.html</guid>
+      <pubDate>Fri, 20 Sep 2025 10:00:00 GMT</pubDate>
+      <category>Productivity</category>
+      <author>naveed@funthings.site (Naveed)</author>
+    </item>
+  </channel>
+</rss>

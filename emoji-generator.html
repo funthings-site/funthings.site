@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Random Emoji Generator - 200+ Emojis Online | FunThings.site</title>
+    <meta name="description" content="Generate 1-100 random emojis instantly from 200+ options! Perfect for social media, messages, and creative projects. Free emoji generator tool.">
+    <meta name="keywords" content="random emoji generator, emoji generator online, free emoji picker, random emojis, emoji tool, social media emojis, emoji generator 2025">
+    <meta name="author" content="Naveed">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Emoji Generator - FunThings.site">
+    <meta property="og:description" content="Generate random emojis instantly! Perfect for messages, social media, or entertainment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://funthings.site/emoji-generator.html">
+    <meta property="og:image" content="https://funthings.site/assets/Logo.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://funthings.site/emoji-generator.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/Logo.jpg">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Free Random Emoji Generator",
+        "alternateName": "Emoji Generator",
+        "description": "Generate 1-100 random emojis instantly from 200+ options! Perfect for social media, messages, and creative projects.",
+        "url": "https://funthings.site/emoji-generator.html",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Naveed"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "FunThings.site",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://funthings.site/assets/Logo.jpg"
+            }
+        },
+        "featureList": [
+            "200+ emoji options",
+            "Generate 1-100 emojis at once",
+            "Copy to clipboard functionality",
+            "No registration required",
+            "Mobile-friendly interface"
+        ],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "FunThings.site",
+            "url": "https://funthings.site"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/Logo.jpg" alt="FunThings.site - Free Random Emoji Generator Logo">
+                FunThings.site
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html#tools">Tools</a>
+                <a href="blog/index.html">Blog</a>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle">🌙 Dark</button>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <h1>Free Random Emoji Generator - 200+ Emojis Online</h1>
+                <p>Generate 1-100 random emojis instantly from 200+ options! Perfect for <a href="blog/best-random-generators.html" style="color: var(--primary-color); text-decoration: underline;">social media posts</a>, messages, creative projects, and entertainment. Try our other <a href="random-country.html" style="color: var(--primary-color); text-decoration: underline;">random country generator</a> and <a href="random-number.html" style="color: var(--primary-color); text-decoration: underline;">random number generator</a> too!</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <div style="text-align: center;">
+                    <div style="margin-bottom: 30px;">
+                        <label style="display: block; margin-bottom: 15px; font-weight: 600; color: var(--text-color); font-size: 1.1rem;">How many emojis would you like?</label>
+                        <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                            <button onclick="setEmojiCount(1)" class="count-btn active">1</button>
+                            <button onclick="setEmojiCount(5)" class="count-btn">5</button>
+                            <button onclick="setEmojiCount(10)" class="count-btn">10</button>
+                            <button onclick="setEmojiCount(20)" class="count-btn">20</button>
+                            <button onclick="setEmojiCount(50)" class="count-btn">50</button>
+                            <button onclick="setEmojiCount(100)" class="count-btn">100</button>
+                        </div>
+                    </div>
+                    
+                    <button class="generate-button" id="generate-emoji">Generate Random Emojis</button>
+                    <div class="result" id="emoji-result" style="min-height: 80px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; font-size: 2rem;">Click the button above to generate random emojis!</div>
+                    <div style="margin-top: 20px;">
+                        <button onclick="copyToClipboard(document.getElementById('emoji-result').textContent)" 
+                                style="background: var(--secondary-color); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: 500; margin-right: 10px;">
+                            📋 Copy All Emojis
+                        </button>
+                        <button onclick="clearEmojis()" 
+                                style="background: var(--warning-color); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-weight: 500;">
+                            🗑️ Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Use Section -->
+            <div style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; margin: 30px 0;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px; text-align: center;">How to Use the Emoji Generator</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">1️⃣</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Click Generate</h3>
+                        <p style="color: var(--text-light);">Press the "Generate Random Emoji" button to get a random emoji instantly.</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">2️⃣</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Copy & Use</h3>
+                        <p style="color: var(--text-light);">Click "Copy Emoji" to copy the emoji to your clipboard and use it anywhere!</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">3️⃣</div>
+                        <h3 style="color: var(--text-color); margin-bottom: 10px;">Have Fun!</h3>
+                        <p style="color: var(--text-light);">Use the emoji in messages, social media, or anywhere you want to add some fun!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fun Facts Section -->
+            <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 15px; padding: 30px; margin: 30px 0;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px; text-align: center;">Fun Emoji Facts</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🎨 Emoji Origins</h3>
+                        <p style="color: var(--text-light);">The word "emoji" comes from Japanese: "e" (picture) + "moji" (character). The first emojis were created in 1999 by Shigetaka Kurita.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">📊 Most Popular</h3>
+                        <p style="color: var(--text-light);">The most used emoji worldwide is 😂 (Face with Tears of Joy), followed by ❤️ (Red Heart) and 🤔 (Thinking Face).</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--secondary-color); margin-bottom: 10px;">🌍 Universal Language</h3>
+                        <p style="color: var(--text-light);">Emojis are considered a universal language that transcends cultural and linguistic barriers, making communication more fun and expressive.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FunThings.site</h3>
+                <p style="color: var(--text-light); margin-bottom: 20px;">
+                    Your go-to destination for fun generators and random tools that brighten your day!
+                </p>
+                <p style="color: var(--text-light); font-size: 0.9rem;">
+                    Making the internet more fun, one tool at a time
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#tools">All Tools</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FunThings.site. All rights reserved. | Created by Naveed</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
